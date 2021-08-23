@@ -1,10 +1,5 @@
 module.exports = function reverse (n) {
-    let result = 0;
-    while (n) {
-      result = result * 10 + n % 10;
-      n = Math.floor(n / 10);
-    }
-  
-    return result;
+    return Math.abs((n<0?-1:1)*parseInt(n.toString().split('').reverse().join('')));
       
 }
+
