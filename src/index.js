@@ -1,5 +1,5 @@
 module.exports = function reverse (n) {
-    return Math.abs((n<0?-1:1)*parseInt(n.toString().split('').reverse().join('')));
-      
+    return  Number(String(Math.abs(n)).split("").map((_,i,arr) => arr[arr.length - 1 - i]).join(""))
+     
 }
 
